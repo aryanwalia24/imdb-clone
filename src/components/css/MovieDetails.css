@@ -1,0 +1,16 @@
+/* src/css/MovieDetails.css */
+.movie-details {
+    padding: 20px;
+  }
+  
+  .movie-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .movie-details p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
