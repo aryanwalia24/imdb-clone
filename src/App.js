@@ -9,7 +9,6 @@ function App() {
   const handleSearch = query => {
     setSearchQuery(query);
   };
-
   return (
     <div className="App">
       {/* Background image */}
