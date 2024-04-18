@@ -11,13 +11,10 @@ const MovieList = ({ searchQuery }) => {
       try {
         let url = 'http://www.omdbapi.com/';
         let params = {
-          apikey: 'e1ab6e3e',
-          type: 'movie'
+          apikey: process.env.REACT_APP_API_KEY,
+          type: 'movie',
+          s: searchQuery // Use the current value of searchQuery
         };
-
-        if (searchQuery) {
-          params.s = searchQuery;
-        }
 
         const response = await axios.get(url, { params });
         setMovies(response.data.Search || []);
@@ -27,7 +24,7 @@ const MovieList = ({ searchQuery }) => {
     };
 
     fetchMovies();
-  }, [searchQuery]); // Fetch movies whenever searchQuery changes
+  }, [searchQuery]); // Include searchQuery in the dependency array
 
   return (
     <div className="movie-list">

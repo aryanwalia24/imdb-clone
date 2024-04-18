@@ -4,7 +4,7 @@ import MovieList from "./components/MovieList";
 import SearchBar from "./components/SearchBar";
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("Batman");
 
   const handleSearch = query => {
     setSearchQuery(query);
