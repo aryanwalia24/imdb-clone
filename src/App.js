@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ".src/components/css/App.css";
-import MovieList from ".src/components/MovieList";
-import SearchBar from ".src/components/SearchBar";
+import "./src/components/css/App.css";
+import MovieList from "./src/components/MovieList";
+import SearchBar from "./src/components/SearchBar";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("Batman");
